@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+}
+
+nav {
+    width: 100%;
+    height: 7em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: antiquewhite;
+    z-index: 99;
+    align-items: center;
+
+}
+
+.nav__content {
+    max-width: 1480px;
+    height: 7em;
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+
+}
+
+nav .logo {
+    display: flex;
+    gap: 5em;
+
+}
+
+nav .logo img {
+    height: 7em;
+    width: 7em;
+
+}
+.home-list a {
+ 
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+
+}
+/* hover  */
+nav .logo a:hover {
+    color: rgb(47, 90, 207);
+}
+.home-list:hover {
+    text-decoration: underline;
+    color: rgb(23, 23, 215);
+  }
+  .login-link:hover{
+    text-decoration: underline;
+    color: rgb(23, 23, 215);
+  } 
+  .sign-link:hover{
+    text-decoration: underline;
+    color: rgb(23, 23, 215);
+  } 
+  .nav-container:hover{
+    text-decoration: underline;
+    color: rgb(23, 23, 215);
+  } 
+  .login-link2:hover{
+    text-decoration: underline;
+    color: rgb(23, 23, 215);
+  } 
+  .sign-link2:hover{
+    text-decoration: underline;
+    color: rgb(23, 23, 215);
+  } 
+/* search container */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    height: 3em;
+}
+
+.search-container .search-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 2.7em;
+    width: 31em;
+    /* margin-right: 5px; */
+}
+
+.search-container button {
+    height: 2.7em;
+    width: 3.5em;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+
+}
+
+/**login **/
+.loginborder {
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;
+    color: black;
+
+}
+
+.loginborder p {
+
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+}
+
+.login-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.login-link :hover{
+    color: blue;
+}
+
+.sign-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+@media (width<930px) {
+    .home-list a {
+        display: none;
+    }
+
+    .nav__content {
+        max-width: 100%;
+    }
+
+    .loginborder {
+        gap: 1em;
+    }
+
+    .search-container {
+        height: 3em;
+        width: 20em;
+    }
+
+    .search-container button {
+        width: 5em;
+    }
+}
+
+@media (width<640px) {
+    .nav__content {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .loginborder {
+        display: none;
+    }
+
+    .search-container {
+        height: 3em;
+        width: 18em;
+        position: relative;
+
+    }
+
+    .search-container button {
+        width: 15%;
+    }
+
+    .search-container .search-input {
+        width: 85%;
+    }
+}
+
+section {
+    width: 100%;
+    height: 3em;
+    position: absolute;
+    top: 7em;
+    background-color: #d3cfcf96;
+    z-index: 99;
+    align-items: center;
+
+}
+
+.second-nav-content {
+    max-width: 1200px;
+    height: 3em;
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000000e0;
+    transition: 0.3s;
+}
+.checklogin{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    color: black;
+    display: none;
+
+}
+.checklogin .login-link2 .sign-link2 a{
+
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000000e0;
+}
+
+.second-nav-content .checkbox {
+    display: none;
+}
+
+.second-nav-content input {
+    display: none;
+}
+
+.second-nav-content .checkbox i {
+    font-size: 2rem;
+    color: #151414;
+    cursor: pointer;
+}
+
+@media (width < 640px) {
+    .second-nav-content .checkbox {
+        display: block;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 85px);
+        left: -100%;
+        top: 48px;
+        background-color: #faf5ff;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .second-nav-content #check:checked~ul {
+        left: 0;
+    }
+
+    ul li a {
+        font-size: 1.25rem;
+        color: black;
+    }
+    .checklogin{
+        display: flex;
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,211 @@
+/* photo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+.row{
+  text-align: center;
+}
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+    margin-top: 100px;
+}
+
+.hero .hero-image-container{
+    height: 30em;
+}
+.hero-image-container {
+    position: relative;
+    width: 50%;  /* Each image takes up half the width */
+    /* height: 2%; */
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 30em;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3); /* Dark overlay for better text visibility */
+    color: #fff;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.tagline {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-size: 14px;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-image-container {
+        width: 100%;  /* Each image takes up the full width on smaller screens */
+        height: 100%;
+    }
+    .hero-image-container img {
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+    }
+    .hero-content {
+flex-direction: column;
+    }
+
+}
+/* card */
+.row1{
+    justify-content: center;
+    background-color:white;
+    color: #000;
+    height: 50px;
+    text-align: center;
+    /* margin-top: 500px; */
+  }
+  .row{
+    justify-content: center;
+    background-color: white;
+    color: #000;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .row3{
+    text-align: center;
+    margin-top: 20px;
+    color: #000;
+  }
+.category{
+    justify-content: center;
+   }
+    .card-container{
+        display: flex;
+        justify-content: space-between;
+        justify-content: space-around;
+        /* margin-top: 500px; */
+    }
+    .card{
+      justify-content: center;
+      justify-content: space-evenly;
+        border: 1px solid wheat;
+    }
+    .container-fluid{
+        display: flex;
+        justify-content: center;
+        
+      }
+        .card img{
+          height: 300px;
+          width: 285px;
+        }
+        .discount {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          background-color: #e74c3c;
+          color: #fff;
+          padding: 5px 10px;
+          border-radius: 4px;
+          font-size: 14px;
+          font-weight: bold;
+      }
+      .product-name{
+        margin: 15px 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: #000;
+      }
+      .price {
+        margin: 10px 0;
+        font-size: 16px;
+      }
+      .old-price {
+        color: #888;
+        text-decoration: line-through;
+        margin-right: 10px;
+      }
+      
+      .new-price {
+        color: #e74c3c;
+        font-weight: bold;
+      }
+      .card-text{
+        color: #000;
+      }
+      .btn{
+        color: black;
+        justify-content: center;
+      }
+      @media (max-width: 768px){
+        .row{
+          justify-content: center;
+        }
+        .card-container{
+          flex-direction: column;
+          align-items: center;
+        }
+        .card{
+          margin-bottom: 35px;
+        }
+      }

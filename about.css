@@ -1,0 +1,292 @@
+/* first image  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  .image-container alt{
+    color: black;
+  }
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.47) ;
+    height: 150px;
+    width: 300px;
+    justify-content: center;
+    
+  }
+  
+  .overlay-text h1 {
+    font-size: 3rem;
+    /* margin-bottom: 10px; */
+    
+  }
+  
+  .learn-more {
+    font-size: 1.2rem;
+    color: #0d0d0d;
+    text-decoration: none;
+  }
+  
+  .learn-more:hover {
+    text-decoration: underline;
+  }
+  .about{
+    text-align: center;
+    padding: 60px 0 100px;
+    font-size: var(--font-size-xl);
+    text-transform: uppercase;
+  }
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .overlay-text h1 {
+        font-size: 2rem;
+    }
+  
+    .learn-more {
+        font-size: 1rem;
+    }
+  }
+  /* second image */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Miniver&display=swap');
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  
+  :root {
+    /* Colors */
+    /* --white-color: #fff;
+    --dark-color: #252525;
+    --primary-color: #3b141c;
+    --secondary-color: #f3961c;
+    --light-gray-color: #f2f2f2;
+    --medium-gray-color: #ccc; */
+  
+    /* Font weight */
+    --font-weight-n: 400;
+    --font-weight-m: 500;
+    --font-weight-s: 600;
+    --font-weight-b: 700;
+  
+    /* Font Size */
+    --font-size-s: 1rem;
+    --font-size-m: 1.13rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2.16rem;
+    --font-size-xxl: 2.25rem;
+  
+    /* Border Radius */
+    --border-radius-s: 5px;
+    --border-radius-m: 20px;
+    --border-radius-circle: 30%;
+  
+    /* Site max width */
+    --site-max-width: 1300px;
+  }
+  
+  .section-container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-left: 10px;
+    /* padding: 60px 0 100px;
+    font-size: var(--font-size-xl);
+    text-transform: uppercase; */
+  }
+  
+  /* About Us Section */
+  .about-us {
+    padding: 100px 20px 120px;
+    background: var(--light-gray-color);
+    display: flex;
+    justify-content: space-between;
+  }
+  .about{
+    justify-content: center;
+  }
+  .about-img{
+    display: flex;
+    width: 100%;
+  }
+  .about-img img{
+    width: 600px;
+    height: 400px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .about-description{
+    margin-left: -50px;
+    width: 50px;
+  }
+  .about-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    /* justify-content: space-between; */
+  }
+  
+  .about-container .about-image-wrapper {
+    width: 400px;
+    height: 400px;
+    border-radius: var(--border-radius-circle);
+    background: url("images-removebg-preview.png") no-repeat center/cover;
+  }
+  
+  .about-container .about-text-wrapper {
+    max-width: 50%;
+  }
+  
+  .about-container .about-text-wrapper .section-title {
+    padding: 32px 0;
+  }
+  
+  .about-container .about-text-wrapper .about-description {
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-m);
+    letter-spacing: 0.96px;
+    line-height: 30.08px;
+    text-align: center;
+  }
+  
+  /* Testimonial Section */
+  /* subash */
+  .subas{
+    display: flex;
+    /* margin-left: 650px; */
+    /* justify-content: space-between; */
+    justify-content: center;
+
+  }
+  .subash{
+   
+    background-color: #ccc;
+    width: 17%;
+    text-align: center;
+    border-radius: 20px;
+  }
+  .subashh{
+    background-color: #ccc;
+    width: 17%;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 100px;
+  }
+  .subash  img{
+    height: 30vh;
+    width: 80%;
+    border-radius: 50%;
+  }
+  .subashh img{
+    height: 30vh;
+    width: 80%;
+    border-radius: 50%;
+  }
+  /* Admin */
+  .testimonial {
+    padding: 60px 20px 60px;
+    background: var(--light-gray-color);
+  }
+  
+  .testimonial .section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+  }
+  .testimonial .card-list .card-item {
+    user-select: none;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .testimonial .card-list .card-item .user-image {
+    width: 150px;
+    height: 150px;
+    border-radius: var(--border-radius-circle);
+    margin-bottom: 50px;
+  }
+  
+  .testimonial .card-list .card-item .user-name {
+    font-size: var(--font-size-m);
+    margin-bottom: 16px;
+  }
+  
+  .testimonial .card-list .card-item .user-thoughts {
+    font-weight: var(--font-weight-m);
+  }
+  .about-description{
+    width: 100%;
+  }
+  
+  /* Responsive Media Query code for max-width: 1024px */
+  @media screen and (max-width: 1024px) {
+    .about-container {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 50px;
+    }
+  
+    .about-container .about-image-wrapper {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .about-container .about-text-wrapper {
+      max-width: 100%;
+    }
+  }
+  
+  /* Responsive Media Query code for max-width: 768px */
+  @media screen and (max-width: 768px) {
+    .slide-wrapper {
+      margin: 0 10px 30px;
+    }
+  }
+  /* Responsive Media Query code for max-width: 576px */
+  @media screen and (max-width: 576px) {
+    .section-title {
+      padding: 32px 0;
+    }
+  
+    .testimonial .card-list .card-item {
+      padding: 8px 0;
+    }   
+  }
+  
+  
+  .admin-details li{
+    list-style: none;
+  
+  }
